@@ -7,10 +7,10 @@
 class Chan < Formula
   desc "Modern engineer's IDE (headless CLI)"
   homepage "https://chan.app/"
-  # No version stanza: brew scans it from the /v0.84.0/ URL path and
+  # No version stanza: brew scans it from the /v0.84.1/ URL path and
   # audit rejects an explicit duplicate.
-  url "https://github.com/fiorix/chan/releases/download/v0.84.0/chan-aarch64-apple-darwin.tar.gz"
-  sha256 "8b2e4ceffae0e7c466075b0d13f0f4d4b31243b07404b1b340f4704d42186ffe"
+  url "https://github.com/fiorix/chan/releases/download/v0.84.1/chan-aarch64-apple-darwin.tar.gz"
+  sha256 "cf436e4be44200bba13962c431836fbc90a3a6af64c6392e0fafcb3b99a2ac96"
   license "Apache-2.0"
 
   livecheck do
