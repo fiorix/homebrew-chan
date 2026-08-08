@@ -3,8 +3,8 @@
 # to the fiorix/homebrew-chan tap at this relative path. The DMG asset name
 # must match web/packages/marketing/scripts/release-assets.mjs (desktopAssets).
 cask "chan-desktop" do
-  version "0.85.0"
-  sha256 "ed7f3d73c14857d7c3c6a322db27860c9912b5fc1c20216b99f656bcaf32c6ab"
+  version "0.86.0"
+  sha256 "c50bc0d27f9acb4c51499ff5273a6b5e43f77b42f3a4416bd29426ec68874ddd"
 
   url "https://github.com/fiorix/chan/releases/download/v#{version}/Chan_#{version}.dmg",
       verified: "github.com/fiorix/chan/"
