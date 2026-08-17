@@ -5,12 +5,12 @@
 # not apply). The tarball asset name must match
 # web/packages/marketing/scripts/release-assets.mjs (cliAssets).
 class Chan < Formula
-  desc "Modern engineer's IDE (headless CLI)"
+  desc "Headless terminal multiplexer and workspace manager"
   homepage "https://chan.app/"
-  # No version stanza: brew scans it from the /v0.91.0/ URL path and
+  # No version stanza: brew scans it from the /v0.92.0/ URL path and
   # audit rejects an explicit duplicate.
-  url "https://github.com/fiorix/chan/releases/download/v0.91.0/chan-aarch64-apple-darwin.tar.gz"
-  sha256 "f59deae71cd1ccb5574be60e6f5dd97398696d89c7ab2ac23c5509be249e3499"
+  url "https://github.com/fiorix/chan/releases/download/v0.92.0/chan-aarch64-apple-darwin.tar.gz"
+  sha256 "45cdc821e510c357b5278e20119d6bde5480a40086e0e1927c510ab10a444eea"
   license "Apache-2.0"
 
   livecheck do
