@@ -7,10 +7,10 @@
 class Chan < Formula
   desc "Headless terminal multiplexer and workspace manager"
   homepage "https://chan.app/"
-  # No version stanza: brew scans it from the /v0.103.0/ URL path and
+  # No version stanza: brew scans it from the /v0.104.0/ URL path and
   # audit rejects an explicit duplicate.
-  url "https://github.com/fiorix/chan/releases/download/v0.103.0/chan-aarch64-apple-darwin.tar.gz"
-  sha256 "2954beabcfaa8f2317c34f9738682b471391cc5a61a125bb680464cb05e21dd3"
+  url "https://github.com/fiorix/chan/releases/download/v0.104.0/chan-aarch64-apple-darwin.tar.gz"
+  sha256 "8da78f2047b59fbece946f09d8067c962235b7a020b07f5a233906607072dd3a"
   license "Apache-2.0"
 
   livecheck do
