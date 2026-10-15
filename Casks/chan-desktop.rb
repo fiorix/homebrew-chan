@@ -4,7 +4,7 @@
 # must match web/packages/marketing/scripts/release-assets.mjs (desktopAssets).
 cask "chan-desktop" do
   version "0.105.0"
-  sha256 "3421595b58db49658d6c695b9983b5407f00294623b10292d760c1cec687df12"
+  sha256 "96e0e4ccbeb3a00024a6be1f930c13ca92eaa7aac6cd43f21be2124494bfc52e"
 
   url "https://github.com/fiorix/chan/releases/download/v#{version}/Chan_#{version}.dmg"
   name "Chan"

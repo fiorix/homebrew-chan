@@ -10,7 +10,7 @@ class Chan < Formula
   # No version stanza: brew scans it from the /v0.105.0/ URL path and
   # audit rejects an explicit duplicate.
   url "https://github.com/fiorix/chan/releases/download/v0.105.0/chan-aarch64-apple-darwin.tar.gz"
-  sha256 "913192186d193e89e9c01d509f8c2a5f142cbdf1a037f4d00195814c10b7c08a"
+  sha256 "3d00e956cdbccd0d6fa60ce16357cc6c4fcef18ce77c507ec8f93b442e810abc"
   license "Apache-2.0"
 
   livecheck do
