@@ -3,8 +3,8 @@
 # to the fiorix/homebrew-chan tap at this relative path. The DMG asset name
 # must match web/packages/marketing/scripts/release-assets.mjs (desktopAssets).
 cask "chan-desktop" do
-  version "0.106.0"
-  sha256 "baf1fd0a455fa34695104960136a783f3981682f15cffd1f1ed453fbb1057c53"
+  version "0.107.0"
+  sha256 "3065f46caddce6b0bcbfa2a8ae16c351be9e9c869820f9978083858078ca7b9b"
 
   url "https://github.com/fiorix/chan/releases/download/v#{version}/Chan_#{version}.dmg"
   name "Chan"
@@ -23,11 +23,15 @@ cask "chan-desktop" do
   # one-or-the-other contract with the headless formula lives in caveats
   # only: cask conflicts_with cannot name a formula (the DSL accepts only
   # :cask), and there is no file-level clash because this cask installs no
-  # bin shims. Only darwin-aarch64 artifacts are published, and Big Sur is
-  # the bundle's minimumSystemVersion (desktop/src-tauri/tauri.conf.json).
+  # bin shims. Only darwin-aarch64 artifacts are published. The bundle's
+  # minimumSystemVersion is Big Sur (desktop/src-tauri/tauri.conf.json), at
+  # or below the oldest macOS Homebrew supports, so the cask declares macOS
+  # with no minimum: `brew style` (Homebrew/OSDependsOn) reads a minimum at
+  # or under Homebrew's floor as redundant, and an `app` cask with no OS
+  # dependency as missing one.
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "Chan.app"
 
