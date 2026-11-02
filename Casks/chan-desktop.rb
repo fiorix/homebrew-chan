@@ -3,12 +3,12 @@
 # to the fiorix/homebrew-chan tap at this relative path. The DMG asset name
 # must match web/packages/marketing/scripts/release-assets.mjs (desktopAssets).
 cask "chan-desktop" do
-  version "0.121.0"
-  sha256 "d2e0a3572492090ad16768a662a52e5c38e26a3a2eb69922dcf2d025c9ade42e"
+  version "0.122.0"
+  sha256 "acca3d135b6e42beabf33e3f7f521e315fa07880c451ce0d0a113875d416ac09"
 
   url "https://github.com/fiorix/chan/releases/download/v#{version}/Chan_#{version}.dmg"
   name "Chan"
-  desc "Desktop terminal multiplexer and workspace manager"
+  desc "Supercharged terminal emulator, desktop app"
   homepage "https://chan.app/"
 
   livecheck do
